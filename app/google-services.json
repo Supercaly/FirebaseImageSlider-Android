@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "project_number": "103910045573",
+    "firebase_url": "https://petify-96505.firebaseio.com",
+    "project_id": "petify-96505",
+    "storage_bucket": "petify-96505.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103910045573:android:ba102442e9fd7eaa",
+        "android_client_info": {
+          "package_name": "com.supercaly.firebaseimageslider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103910045573-acc11fv1vodclaspmpagcdf1i4918ib7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.supercaly.firebaseimageslider",
+            "certificate_hash": "ebbf34d44976d4478565823ba692b62f73ad184f"
+          }
+        },
+        {
+          "client_id": "103910045573-vqs1n4r1plj56k671lk7qrae2n1dqob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx28qyzlroG7QqxghxwrfZIQmyEQfoi1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103910045573-vqs1n4r1plj56k671lk7qrae2n1dqob1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103910045573:android:bcfdb0669cb61b25",
+        "android_client_info": {
+          "package_name": "com.supercaly.petify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103910045573-mt2mdbmmt22pn1notak1t2n8ph4j1u42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.supercaly.petify",
+            "certificate_hash": "ebbf34d44976d4478565823ba692b62f73ad184f"
+          }
+        },
+        {
+          "client_id": "103910045573-210vqmhrqd2celkk8paqp157n53kgpi5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.supercaly.petify",
+            "certificate_hash": "09a523dd4bc7fa4b3595fd372e1fc32f9614a5bc"
+          }
+        },
+        {
+          "client_id": "103910045573-vqs1n4r1plj56k671lk7qrae2n1dqob1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx28qyzlroG7QqxghxwrfZIQmyEQfoi1o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103910045573-vqs1n4r1plj56k671lk7qrae2n1dqob1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3040771420772333~1346178809"
+    }
+  ],
+  "configuration_version": "1"
+}
