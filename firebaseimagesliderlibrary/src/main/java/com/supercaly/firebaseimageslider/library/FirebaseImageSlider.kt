@@ -9,13 +9,19 @@ import androidx.viewpager.widget.ViewPager
 import com.google.firebase.storage.FirebaseStorage
 
 class FirebaseImageSlider(c: Context, attrs: AttributeSet?): RelativeLayout(c, attrs) {
+
     companion object {
         private const val TAG = "FirebaseImageSlider"
     }
 
+    private val mReference = FirebaseStorage.getInstance().reference
+
     private var mPlaceholderResource: Int = R.color.default_placeholder_color
+
     private var mViewPager: ViewPager
+
     private var mAdapter: FisAdapter
+
     private var mClickListener: OnClickListener? = null
 
     constructor(c: Context) : this(c, null)
@@ -47,19 +53,24 @@ class FirebaseImageSlider(c: Context, attrs: AttributeSet?): RelativeLayout(c, a
 
     fun setData(list: List<String>?) {
         list?.let {
-            val reference = FirebaseStorage.getInstance().reference
+            //The list contain elements... loop throw them
             for (value: String in list) {
-                reference.child(value).downloadUrl
+                //Create StorageReference and get the download url
+                mReference.child(value).downloadUrl
                     .addOnSuccessListener {url ->
+                        //Create a new FisSlider with the url and add it to the FisAdapter
                         Log.d(TAG, "setData: $url")
                         mAdapter.addData(FisSlider(context, url.toString(), mPlaceholderResource))
                     }
                     .addOnFailureListener {
+                        //Cannot get download url... skip this photo
                         Log.e(TAG, "Error getting url for $value")
+                        mAdapter.addData(FisSlider(context, null, mPlaceholderResource))
                     }
             }
         }
     }
+
 
     // TODO: 25/12/18 Implement a click listener in the whole view pager
     fun setOnClickListener(l: OnClickListener){

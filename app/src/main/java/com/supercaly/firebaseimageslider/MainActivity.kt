@@ -2,17 +2,14 @@ package com.supercaly.firebaseimageslider
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.facebook.drawee.backends.pipeline.Fresco
 import com.supercaly.firebaseimageslider.library.FirebaseImageSlider
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        //Initialize Fresco
-        Fresco.initialize(this)
+        setContentView(R.layout.activity_main)
 
         //Create arrayListOf Strins
         val a = listOf(
@@ -27,8 +24,7 @@ class MainActivity : AppCompatActivity() {
             "articles-debug/kMbjUpin1WPDE236FkSv/40363274-3aea-4727-bb0f-487ba78882cf")
 
         //Find FIS
-        val fis: FirebaseImageSlider = findViewById(R.id.fis)
-        //Set the list of strings
+        val fis = findViewById<FirebaseImageSlider>(R.id.fis)
         fis.setData(a)
     }
 }
