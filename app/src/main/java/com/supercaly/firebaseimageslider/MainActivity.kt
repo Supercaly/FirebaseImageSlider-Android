@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Create arrayListOf Strins
-        val a = listOf(
+        val list = listOf(
             "articles-debug/OI5bWljWBOYvKquBEyEB/773e5c92-5b1f-4540-842f-ea55dc533f1a",
             "articles-debug/OI5bWljWBOYvKquBEyEB/21b0287a-7f73-4d7d-8182-11289c053846",
             "articles-debug/kMbjUpin1WPDE236FkSv/40363274-3aea-4727-bb0f-487ba788f",
@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
             "articles-debug/OI5bWljWBOYvKquBEyEB/21b0287a-7f73-4d7d-8182-11289c053846",
             "articles-debug/kMbjUpin1WPDE236FkSv/40363274-3aea-4727-bb0f-487ba78882cf")
 
-        //Find FIS
+        //Find FIS and add data
         val fis = findViewById<FirebaseImageSlider>(R.id.fis)
-        fis.setData(a)
+        fis.images(list)
     }
 }
