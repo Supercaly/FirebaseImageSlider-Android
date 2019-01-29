@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+#### Rimuovere se si risolve il problema delle licenze
+yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses
 ##############################################################################
 ##
 ##  Gradle start up script for UN*X
